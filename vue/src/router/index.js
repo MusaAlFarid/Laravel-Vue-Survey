@@ -4,6 +4,7 @@ import Surveys from '../views/surveys.vue'
 import Login from '../views/login.vue'
 import Register from '../views/register.vue'
 import DefaultLayout from '../components/DefaultLayout.vue'
+import AuthLayout from '../components/AuthLayout.vue'
 import { Store } from "vuex";
 import store from "../store";
 
@@ -23,6 +24,7 @@ const routes = [
         redirect: '/login',
         name: 'Auth',
         component: AuthLayout,
+
         children: [
             {
                 path: '/Login',
